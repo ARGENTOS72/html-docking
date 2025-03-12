@@ -1,5 +1,4 @@
-
-                        <h2 id="refcellt-and-the-interior-mutability-pattern"><a class="header" href="#refcellt-and-the-interior-mutability-pattern"><code>RefCell&lt;T&gt;</code> and the Interior Mutability Pattern</a></h2>
+<h2 id="refcellt-and-the-interior-mutability-pattern"><a class="header" href="#refcellt-and-the-interior-mutability-pattern"><code>RefCell&lt;T&gt;</code> and the Interior Mutability Pattern</a></h2>
 <p><em>Interior mutability</em> is a design pattern in Rust that allows you to mutate
 data even when there are immutable references to that data; normally, this
 action is disallowed by the borrowing rules. To mutate data, the pattern uses
@@ -597,5 +596,3 @@ sometimes worth trading a bit of speed for this flexibility in our data
 structures. Note that <code>RefCell&lt;T&gt;</code> does not work for multithreaded code!
 <code>Mutex&lt;T&gt;</code> is the thread-safe version of <code>RefCell&lt;T&gt;</code> and we’ll discuss
 <code>Mutex&lt;T&gt;</code> in Chapter 16.</p>
-
-                    

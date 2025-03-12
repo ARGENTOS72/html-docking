@@ -32,7 +32,8 @@ fn read_html_files(dir_path: PathBuf, count: &mut u32, file_dir: PathBuf) {
             let mut file = File::create(file_path).unwrap();
 
             for element in document.select(&selector) {
-                file.write_all(element.inner_html().as_bytes()).unwrap();
+                file.write_all(element.inner_html().trim().as_bytes())
+                    .unwrap();
             }
 
             *count += 1;

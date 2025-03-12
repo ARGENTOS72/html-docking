@@ -1,5 +1,4 @@
-
-                        <h2 id="turning-our-single-threaded-server-into-a-multithreaded-server"><a class="header" href="#turning-our-single-threaded-server-into-a-multithreaded-server">Turning Our Single-Threaded Server into a Multithreaded Server</a></h2>
+<h2 id="turning-our-single-threaded-server-into-a-multithreaded-server"><a class="header" href="#turning-our-single-threaded-server-into-a-multithreaded-server">Turning Our Single-Threaded Server into a Multithreaded Server</a></h2>
 <p>Right now, the server will process each request in turn, meaning it won’t
 process a second connection until the first is finished processing. If the
 server received more and more requests, this serial execution would be less and
@@ -1211,5 +1210,3 @@ temporary values used in the expression on the right hand side of the equals
 sign are immediately dropped when the <code>let</code> statement ends. However, <code>while let</code> (and <code>if let</code> and <code>match</code>) does not drop temporary values until the end of
 the associated block. In Listing 20-21, the lock remains held for the duration
 of the call to <code>job()</code>, meaning other workers cannot receive jobs.</p>
-
-                    
